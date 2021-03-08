@@ -118,7 +118,6 @@ a {
   margin-bottom: 0.4rem;
 }
 
-
 .right-side .arrow-down {
   position: absolute;
   top: 0;
@@ -145,91 +144,92 @@ li {
 }
 .active .arrow-down {
   transform: rotate(-180deg);
-  transition: rotate .1s ease-in-out;
+  transition: rotate 0.1s ease-in-out;
 
-.clickable:hover {
-  display: block;
-  transition: .1s;
-}
-
-.right-side-inner {
-  height: 370px;
-  width: 100%;
-}
-
-//Vectors
-.designs {
-  position: relative;
-  height: 100%;
-  background-image: url("/images/bg-pattern-desktop.svg");
-  background-position: 110% 70%;
-  background-repeat: no-repeat;
-}
-
-.designs img {
-  position: absolute;
-}
-
-.woman {
-  position: absolute;
-  top: 70px;
-  left: -90px;
-  height: 70%;
-}
-.woman-mobile {
-  display: none;
-}
-
-.box {
-  position: absolute;
-  bottom: 340px;
-  left: -70px;
-}
-
-//Mobile
-@media (max-width: 375px) {
-  .card {
-    padding-top: 7rem;
-  }
-  .content {
-    grid-template-columns: 1fr;
+  .clickable:hover {
+    display: block;
+    transition: 0.1s;
   }
 
+  .right-side-inner {
+    height: 370px;
+    width: 100%;
+  }
+
+  //Vectors
   .designs {
-    background-image: none;
+    position: relative;
+    height: 100%;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-position: 110% 70%;
+    background-repeat: no-repeat;
   }
 
-  .right-side {
-    //padding: 4.5rem 2.5rem;
-    padding: 4rem;
-    margin: 4.5rem 0;
-  }
-  .container {
-    max-width: 365px;
-    margin: auto;
-  }
-  .box {
-    bottom: 640px;
-    left: 12px;
-    transform: scale(0.4);
-    z-index: 10;
-  }
-  .woman-mobile {
+  .designs img {
     position: absolute;
-    display: inline-block;
-    transform: scale(0.3);
-    top: -200px;
-    left: -210px;
+  }
+
+  .woman {
+    position: absolute;
+    top: 70px;
+    left: -90px;
     height: 70%;
   }
-  h1 {
-    text-align: center;
-    padding-top: 1.3rem;
+  .woman-mobile {
+    display: none;
   }
-  .right-side {
-    padding: 0 4rem;
+
+  .box {
+    position: absolute;
+    bottom: 340px;
+    left: -70px;
   }
-  .right-side .faq {
-    margin-right: 0;
+
+  //Mobile
+  @media (max-width: 375px) {
+    .card {
+      padding-top: 7rem;
+    }
+    .content {
+      grid-template-columns: 1fr;
+    }
+
+    .designs {
+      background-image: none;
+    }
+
+    .right-side {
+      //padding: 4.5rem 2.5rem;
+      padding: 4rem;
+      margin: 4.5rem 0;
+    }
+    .container {
+      max-width: 365px;
+      margin: auto;
+    }
+    .box {
+      bottom: 640px;
+      left: 12px;
+      transform: scale(0.4);
+      z-index: 10;
+    }
+    .woman-mobile {
+      position: absolute;
+      display: inline-block;
+      transform: scale(0.3);
+      top: -200px;
+      left: -210px;
+      height: 70%;
+    }
+    h1 {
+      text-align: center;
+      padding-top: 1.3rem;
+    }
+    .right-side {
+      padding: 0 4rem;
+    }
+    .right-side .faq {
+      margin-right: 0;
+    }
   }
 }

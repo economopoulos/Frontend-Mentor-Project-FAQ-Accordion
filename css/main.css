@@ -4,14 +4,20 @@
   margin: -2px 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
   font-family: "Kumbh Sans", sans-serif;
   line-height: 1.3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#af67e9),
+    to(#6565e7)
+  );
   background-image: linear-gradient(180deg, #af67e9, #6565e7);
   height: 100%;
   background-repeat: no-repeat;
@@ -62,14 +68,13 @@ a {
 .content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   background: #fff;
   border-radius: 25px;
   height: 100%;
   margin-bottom: 2.3rem;
   -webkit-box-shadow: 3px 25px 20px -5px rgba(29, 29, 29, 0.3);
-          box-shadow: 3px 25px 20px -5px rgba(29, 29, 29, 0.3);
+  box-shadow: 3px 25px 20px -5px rgba(29, 29, 29, 0.3);
   overflow: hidden;
 }
 
@@ -88,11 +93,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .left-side {
@@ -124,14 +129,14 @@ li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -ms-flex-align: space-between;
+  align-items: space-between;
   padding-top: 1rem;
 }
 
@@ -140,8 +145,8 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .answer {
@@ -153,28 +158,28 @@ li {
 
 .active .arrow-down {
   -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  transform: rotate(-180deg);
   -webkit-transition-property: rotate;
   transition-property: rotate;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
   -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .active .arrow-down:after {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   -webkit-transition-property: rotate;
   transition-property: rotate;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
   -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .clickable:hover {
@@ -223,7 +228,7 @@ li {
   }
   .content {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .designs {
     background-image: none;
@@ -240,14 +245,14 @@ li {
     bottom: 640px;
     left: 12px;
     -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    transform: scale(0.4);
     z-index: 10;
   }
   .woman-mobile {
     position: absolute;
     display: inline-block;
     -webkit-transform: scale(0.3);
-            transform: scale(0.3);
+    transform: scale(0.3);
     top: -200px;
     left: -210px;
     height: 70%;
